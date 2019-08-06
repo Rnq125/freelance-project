@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Nature’s Sunshine Products</title>
+    <link rel="shortcut icon" href="images/nsp.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link href="css/123.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png" width="301" height="86" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <h5><a class="nav-link" href="index.html">Главная</a></h5>
+        </li>
+        <li class="nav-item">
+          <h5><a class="nav-link" href="company.html">О компании</a></h5>
+        </li>
+        <li class="nav-item">
+          <h5><a class="nav-link" href="business.html">Бизнес с NSP</a></h5>
+        </li>
+        <li class="nav-item dropdown">
+        <h5 class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Купить
+        </h5>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="shop.html">Как купить</a>
+          <a class="dropdown-item" href="http://natr.ru/catalog/bad">Продукция</a>
+          <a class="dropdown-item" href="price.html">Цены</a>
+        </div>
+        </li>
+        <li class="nav-item">
+          <h5><a class="nav-link" href="contacts.html">Контакты</a></h5>
+        </li>
+      </ul>
+    </div>
+      <button type="button" class="btn btn-success" href="#myModal" data-toggle="modal">Оформить карту</button>
+    </div>
+    </nav>
+
+
+
+
+
+  <div class="card bg-dark text-white">
+    <div class="card-img-overlay">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-12">
+        <img class="card-img" src="images/company_1.jpg" alt="Card image">
+        <div class="card-body">
+        <p class="card-text text-dark">
+          Nature’s Sunshine Products уже 46 лет (с 1972 года) создает, выпускает и распространяет
+          биологически активные добавки и витамины. В активе NSP 600 формул фитопрепаратов для
+          нормализации работы организма. Команда ученых разрабатывает и тестирует БАД в собственной
+          лаборатории компании в Америке.
+        </p>
+        </div>
+        <img class="card-img" src="images/company_2.jpg" alt="Card image">
+        <div class="card-body">
+        <p class="card-text text-dark">
+          Nature’s Sunshine (NASDAQ:NATR) сегодня – это 27 представительств по всему миру миллионы
+          независимых дистрибьюторов, которые распространяют продукцию в 40 странах.
+        </p>
+        </div>
+        <img class="card-img" src="images/company_3.jpg" alt="Card image">
+        <div class="card-body">
+        <p class="card-text text-dark">
+          В Россию NSP пришла в 1999 году. За 19 лет компания выпустила на рынок 98 формул биодобавок,
+          косметические линии по уходу за кожей Natria, Tropical Mists, Bremani Care и бренд декоративной косметики Bremani.
+          Нашу продукцию выбирают люди, которые грамотно заботятся о здоровье и внимательно относятся к вопросам профилактики.
+        </p>
+        </div>
+        <img class="card-img" src="images/company_4.jpg" alt="Card image">
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Заголовок модального окна -->
+        <div class="modal-header">
+          <h4 class="modal-title">Оформление дисконтной карты NSP</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        </div>
+        <!-- Основное содержимое модального окна -->
+        <div class="modal-body">
+          <!-- Форма входа -->
+  		<form role="form" action="http://nspproducts.com/php/send.php" method="post" target="_blank" name="f1">
+  			<fieldset>
+  				<hr class="colorgraph">
+          <div class="form-group">
+            <input class="form-control" type="text" name="fio" placeholder="ФИО" required>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" name="country" placeholder="Страна" required>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" name="city" placeholder="Город" required>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" name="address" placeholder="Адрес" required>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" name="phone" placeholder="Телефон" required>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" name="email" placeholder="Электронная почта" required>
+          </div>
+  				<hr class="colorgraph">
+          <button class="btn btn-success btn-lg btn-block" type="submit" value="12321" name="sab">Оформить</button>
+  			</fieldset>
+  		</form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="js/form.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  </body>
+
+</html>
